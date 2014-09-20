@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Main Page</title>
+	</head>
+
+	<body>
+		<#if !login?? >
+			<p><a href="/login">Sign In</a></p>
+		<#else>
+			<p>Hello, ${login}<p>
+			<p> <a href="/logout">Exit</a></p>
+		</#if>
+		<p> The numbers of registered users: ${countUsers}</p>
+	</body>
+</html>
